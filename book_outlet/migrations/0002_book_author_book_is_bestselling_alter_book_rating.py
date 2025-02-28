@@ -24,6 +24,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='book',
             name='rating',
-            field=models.IntegerField(validators=[django.core.validators.MinValueValidator(1), django.core.validators.MaxValueValidator(5)]),
+            field=models.IntegerField(validators=[django.core.validators.MinValueValidator(
+                1), django.core.validators.MaxValueValidator(5)]),
         ),
     ]
